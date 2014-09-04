@@ -6,11 +6,6 @@ var React = require("react/lib/reactWithAddons"),
 	var log = function(x) { console.log(x); return x };
 
 var BigBox = React.createClass({
-	componentDidMount: function() {
-		if(this.props.droppable) {
-			Streams.dragOverStream(this.getDOMNode()).onValue(log);
-		};
-	},
   	render: function() {
 	    return (
 	      <div className="box big"></div>
@@ -26,7 +21,6 @@ var SmallBox = React.createClass({
 	componentDidMount: function() {
 		if(this.props.draggable) {
 			Streams.dragStream(this.getDOMNode()).onValue(this.setXandY);
-			Streams.baconStream('onMouseEnter',this.getDOMNode()).onValue(log);
 		};
 	},
   	render: function() {
