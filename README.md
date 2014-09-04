@@ -1,9 +1,12 @@
-react-webpack
+ReactJS Drag and Drop test.
 =============
 
-a [react](http://facebook.github.io/react/index.html) + [webpack](https://github.com/webpack/webpack)  project template. ES6 (Harmony) enabled through [Facebook-jstransform](https://github.com/facebook/jstransform)
+Approach: Use React Synthetic events from outside of a component.
+A component can register to specific events on "componentDidMount" lifecycle method.
 
-This template is a great way to start the [react-tutorial](http://facebook.github.io/react/docs/tutorial.html)
+Pros:
+- compose Synthetic Events with other event-systems like BaconJS.
+- make a comparison to the approach to integrage window-events into React Components
 
 
 ### Install
@@ -18,8 +21,6 @@ install [node.js](http://nodejs.org/download/) and [git](http://git-scm.com/down
 after node.js is installed, run these commands
 
 ``` npm install webpack -g ```
-
-``` npm install bower -g ```
 
 ``` npm install webpack-dev-server -g ```
 
