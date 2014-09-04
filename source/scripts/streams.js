@@ -30,8 +30,6 @@ var dragEndStream = hammerStream('panend');
 
 
 module.exports = {
-	dragStream: dragStream,
-    dragEndStream: dragEndStream,
-    dragOverStream: dragOverStream,
-    baconStream: baconStream
+    dragStream: dragStream,
+    dragEndStream: dragEndStream
 }
