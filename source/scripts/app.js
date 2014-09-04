@@ -34,7 +34,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div>
-      	<BigBox droppable={true}/>
+      	<BigBox/>
       	<SmallBox draggable={true}/>
       </div>
     );
